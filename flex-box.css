@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.flex-container{
+    height: 500px;
+    flex-direction: column;     /*if flex-direction == row: */
+    display: flex;                         /*Horizontal (<--->) == Main Axis*/
+    background-color: #f4f4f4;           /*Vertical  ==  Cross Axis*/
+    /* Always **ON** the Main Axis */                 /*else (column) :*/
+    justify-content: center;                           /*Vertical  ==  Main Axis*/
+    /* Always **ON** the Cross Axis */                       /*Horizontal (<--->) == Cross Axis*/
+    align-items: center;
+}
+/* .flex-container::after{
+    content: '';
+    clear: both;
+    display: block;
+} */
+.items{
+    width: 100px;
+    height: 100px;
+    background: #254de4;
+    margin: 10px;
+    color: white;
+    /* float: left; */
+}
+/* .items:nth-of-type(1){
+    align-self: flex-start;
+}
+.items:nth-of-type(2){
+    align-self: center;
+}
+.items:nth-of-type(3){
+    align-self: flex-end;
+} */
